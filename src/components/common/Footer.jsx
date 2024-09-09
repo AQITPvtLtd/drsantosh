@@ -111,13 +111,15 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <FaLocationDot className="lg:text-5xl text-blue-700 text-4xl" />
                 <p className="">
-                  JEEWAN HOSPITAL 2-B, Pusa Road, Next to Karol Bagh, Rajinder
-                  Nagar, New Delhi, Delhi 110005
+                  JEEWAN HOSPITAL - 2-B, Pusa Road, Next to Karol Bagh, 108,
+                  Sadhu Vasvani Marg, opp. Pillar No.-107, Rajinder Nagar, New
+                  Delhi, Delhi 11000
                 </p>
               </div>
               <Link href="/">
                 <p className="flex items-center gap-2 mt-2">
-                  <IoIosCall className="text-blue-700 text-2xl" /> +91 9999137803
+                  <IoIosCall className="text-blue-700 text-2xl" /> +91
+                  9999137803
                 </p>
               </Link>
             </div>

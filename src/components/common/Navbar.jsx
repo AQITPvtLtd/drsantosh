@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="fixed lg:top-14 top-48 left-0 w-full bg-white dark:bg-gray-900 z-40">
+      <nav className="fixed lg:top-12 top-40 left-0 w-full bg-white dark:bg-gray-900 z-40">
         {/* Adjusted the top property to 12 to sit below the Top component */}
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">

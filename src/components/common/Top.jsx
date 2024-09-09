@@ -2,57 +2,59 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { MdStar } from "react-icons/md";
-import { FaRegStarHalfStroke } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { IoCallSharp } from "react-icons/io5";
 import Link from "next/link";
+
 const Top = () => {
   return (
     <div>
-      <div className="fixed top-0 left-0 w-full bg-white z-50">
-        <div className="flex flex-col lg:flex-row mt-4 items-center">
+      <div className="fixed top-0 left-0 w-full z-50 bg-[#00867e]">
+        <div className="flex flex-col lg:flex-row items-center py-3">
           <div className="grid lg:grid-cols-12 gap-4 w-full">
+            {/* Social Media Icons */}
             <div className="col-span-12 lg:col-start-2 lg:col-span-3">
-              <div className="flex justify-center lg:justify-start text-3xl gap-2">
-                <Link href="/">
-                  <FaInstagram className="bg-[#04b67c] text-white p-1" />
+              <div className="flex justify-evenly lg:justify-start text-4xl lg:gap-4">
+                <Link href="https://www.instagram.com/drsantoshghai/">
+                  <FaInstagram className="bg-[#04b67c] text-white p-2 rounded-full hover:scale-110 transition-transform duration-200" />
                 </Link>
-                <Link href="/">
-                  <FaFacebookF className="bg-[#04b67c] text-white p-1" />
+                <Link href="https://www.facebook.com/profile.php?id=61562238766058">
+                  <FaFacebookF className="bg-[#04b67c] text-white p-2 rounded-full hover:scale-110 transition-transform duration-200" />
                 </Link>
-                <Link href="/">
-                  <FaLinkedin className="bg-[#04b67c] text-white p-1" />
+                <Link href="https://www.linkedin.com/">
+                  <FaLinkedin className="bg-[#04b67c] text-white p-2 rounded-full hover:scale-110 transition-transform duration-200" />
+                </Link>
+                <Link href="https://www.youtube.com/channel/UCueXPbbshhW8VtgU9BoPaqA">
+                  <FaYoutube className="bg-[#04b67c] text-white p-2 rounded-full hover:scale-110 transition-transform duration-200" />
                 </Link>
               </div>
             </div>
 
-            <div className="col-span-12 lg:col-span-3 flex justify-center lg:justify-start">
-              <p className="text-center lg:text-left">
-                Our customers says{" "}
-                <span className="font-semibold text-3xl">Excellent</span>
-              </p>
-            </div>
-
-            <div className="col-span-12 lg:col-span-2 flex justify-center lg:justify-start">
-              <div>
-                <div className="flex items-center justify-center lg:justify-start">
-                  <MdStar className="text-3xl text-[#04b67c]" />
-                  <p className="font-semibold text-xl">Trustpilot</p>
-                </div>
-                <div className="flex gap-1 justify-center lg:justify-start mt-1 ml-4">
-                  <MdStar className="bg-[#04b67c] text-white" />
-                  <MdStar className="bg-[#04b67c] text-white" />
-                  <MdStar className="bg-[#04b67c] text-white" />
-                  <MdStar className="bg-[#04b67c] text-white" />
-                  <FaRegStarHalfStroke className="bg-[#04b67c] text-white" />
-                </div>
+            {/* Phone Number */}
+            <div className="col-span-12 lg:col-span-3 mt-2 lg:mt-0">
+              <div className="flex justify-evenly lg:justify-start text-lg md:text-xl text-white">
+                <Link
+                  href="tel:+919999137803"
+                  className="flex gap-3 items-center"
+                >
+                  <IoCallSharp className="bg-[#04b67c] text-white p-2 rounded-full hover:scale-110 transition-transform duration-200 text-4xl" />
+                  Call Now +91 9999137803
+                </Link>
               </div>
             </div>
 
-            <div className="col-span-12 lg:col-span-3 flex justify-center lg:justify-start">
-              <p className="text-center lg:text-left md:mt-3">
-                4.5 Out of 5 based on{" "}
-                <span className="font-semibold">1,200 reviews</span>
-              </p>
+            {/* Email */}
+            <div className="col-span-12 lg:col-span-3 lg:mt-0">
+              <div className="flex justify-evenly lg:justify-start text-lg md:text-xl text-white">
+                <Link
+                  href="mailto:officialsantoshghai@gmail.com"
+                  className="flex gap-3 items-center"
+                >
+                  <IoIosMail className="bg-[#04b67c] text-white p-2 rounded-full hover:scale-110 transition-transform duration-200 text-4xl" />
+                  officialsantoshghai@gmail.com
+                </Link>
+              </div>
             </div>
           </div>
         </div>

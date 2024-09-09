@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-screen overflow-x-hidden bg-cover mt-20 lg:mt-40">
+    <div className="relative w-full h-screen overflow-x-hidden bg-cover mt-28 lg:mt-40">
       <div className="absolute inset-0">
         <Image
           src="/Banner/new.jpg"
@@ -16,7 +16,7 @@ const Banner = () => {
         />
       </div>
 
-      <div className="absolute text-start px-6 bg-opacity-50 sm:mt-[30rem] lg:mt-16 mt-72">
+      <div className="absolute text-start px-6 bg-opacity-50 sm:mt-[30rem] lg:mt-16 mt-52">
         <div className="">
           <h1 className="text-2xl lg:text-5xl md:text-3xl font-bold py-2 line-clamp-3 leading-relaxed lg:leading-snug">
             We Can Help You Get <br className="hidden lg:block" /> Better &
@@ -28,14 +28,16 @@ const Banner = () => {
           </h1>
 
           <h3 className="text-sm lg:text-base max-w-lg py-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Internal medicine focuses on the diagnosis, treatment, and
+            prevention of adult diseases. General physicians, specializing in
+            internal medicine, manage a wide range of health issues, including
+            chronic conditions like diabetes and hypertension. They provide
+            comprehensive care, often coordinating with specialists to ensure
+            patients receive appropriate and holistic medical treatment.
           </h3>
         </div>
 
-        <Link href="/contactus">
+        <Link href="tel:+919999137803">
           <button className="bg-[#00867f] text-white font-bold py-2 px-4 text-xl lg:text-3xl rounded-full shadow-md transition duration-300 ease-in-out mt-4">
             Call Now
           </button>
