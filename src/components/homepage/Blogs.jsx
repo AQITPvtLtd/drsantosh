@@ -4,7 +4,7 @@ import { GiHeartPlus } from "react-icons/gi";
 
 const Blogs = () => {
   return (
-    <div className="p-4 lg:mt-28 mt-16">
+    <div className="p-4 lg:mt-10 mt-16">
       <div className="flex items-center justify-center">
         <div className="flex items-center justify-center gap-3 bg-white rounded-full py-3 px-6 shadow-md lg:w-3/12">
           <GiHeartPlus className="text-blue-400 text-3xl" />

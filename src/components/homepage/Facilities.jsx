@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { RiHeartAdd2Fill } from "react-icons/ri";
-import { GiEyeShield } from "react-icons/gi";
 import { TiTick } from "react-icons/ti";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { GiKidneys } from "react-icons/gi";
@@ -13,7 +12,7 @@ const Facilities = () => {
       className="relative w-full h-full overflow-hidden bg-cover bg-center"
       style={{ backgroundImage: "url(Facilities/bgimg.png)" }}
     >
-      <div className="relative z-10 lg:grid lg:grid-cols-12 items-center justify-center w-full h-full p-8 text-center lg:mt-20 mt-10">
+      <div className="relative z-10 lg:grid lg:grid-cols-12 items-center justify-center w-full h-full text-center mt-10">
         <div className="col-start-2 col-span-10">
           {/* Title Section */}
           <div className="flex items-center justify-center">

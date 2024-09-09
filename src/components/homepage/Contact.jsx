@@ -19,7 +19,7 @@ const Contact = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative flex flex-col items-center bg-opacity-90 lg:mt-24 mt-10 py-12 px-4">
+      <div className="relative flex flex-col items-center bg-opacity-90 lg:mt-14 mt-10 py-12 px-4">
         {/* Heading */}
         <h1 className="text-3xl lg:text-5xl font-bold text-gray-900 text-center">
           Get Book Your Consultation

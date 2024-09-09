@@ -103,10 +103,6 @@ const Footer = () => {
             {/* Contact Info */}
             <div>
               <h1 className="font-bold underline mb-4 text-3xl">Contact</h1>
-              <p className="mb-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Mollitia, repellendus.
-              </p>
 
               <div className="flex items-center gap-2">
                 <FaLocationDot className="lg:text-5xl text-blue-700 text-4xl" />
