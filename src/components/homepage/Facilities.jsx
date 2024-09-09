@@ -30,7 +30,7 @@ const Facilities = () => {
       </div>
 
       {/* Facilities Grid Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:pb-36 pb-32 lg:px-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:pb-36 pb-16 lg:px-10">
         {/* Skin Allergies */}
         <div className="lg:relative rounded-lg">
           {/* Show image only on large screens */}
@@ -42,7 +42,7 @@ const Facilities = () => {
             className="w-full hidden lg:block"
           />
 
-          <div className="lg:absolute inset-0 flex justify-center items-center z-10">
+          <div className="lg:absolute inset-0 flex justify-center items-center z-10 px-6">
             <div className="relative bg-white p-4 drop-shadow-2xl rounded-b-lg w-full md:w-80 lg:h-60 flex flex-col justify-center items-center transform lg:translate-y-1/2">
               <div className="flex items-center text-4xl justify-between gap-36">
                 <GiKidneys className="text-blue-500 mr-2" />
@@ -70,7 +70,7 @@ const Facilities = () => {
             className="w-full hidden lg:block"
           />
 
-          <div className="lg:absolute inset-0 flex justify-center items-center z-10">
+          <div className="lg:absolute inset-0 flex justify-center items-center z-10 px-6">
             <div className="relative bg-white p-4 drop-shadow-2xl rounded-b-lg w-full md:w-80 lg:h-60 flex flex-col justify-center items-center transform lg:translate-y-1/2">
               <div className="flex items-center text-4xl justify-between gap-36">
                 <FaHandHoldingHeart className="text-blue-500 mr-2" />
@@ -96,7 +96,7 @@ const Facilities = () => {
             className="w-full hidden lg:block"
           />
 
-          <div className="lg:absolute inset-0 flex justify-center items-center z-10">
+          <div className="lg:absolute inset-0 flex justify-center items-center z-10 px-6">
             <div className="relative bg-white p-4 drop-shadow-2xl rounded-b-lg w-full md:w-80 lg:h-60 flex flex-col justify-center items-center transform lg:translate-y-1/2">
               <div className="flex items-center text-4xl justify-between gap-36">
                 <MdBloodtype className="text-blue-500 mr-2" />
