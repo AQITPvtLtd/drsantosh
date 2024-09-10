@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-screen overflow-x-hidden bg-cover mt-28 lg:mt-40">
+    <div className="relative w-full h-screen overflow-x-hidden bg-cover mt-20 lg:mt-40">
       <div className="absolute inset-0">
         <Image
           src="/Banner/new.jpg"
@@ -16,18 +16,18 @@ const Banner = () => {
         />
       </div>
 
-      <div className="absolute text-start px-6 bg-opacity-50 sm:mt-[30rem] lg:mt-16 mt-52">
+      <div className="absolute text-start px-6 bg-opacity-50 sm:mt-[30rem] md:mt-44 lg:mt-8 mt-32">
         <div className="">
-          <h1 className="text-2xl lg:text-5xl md:text-3xl font-bold py-2 line-clamp-3 leading-relaxed lg:leading-snug">
+          <h1 className="text-2xl lg:text-5xl md:text-5xl font-bold py-2 line-clamp-3 leading-relaxed lg:leading-snug">
             We Can Help You Get <br className="hidden lg:block" /> Better &
             Regain Your <br className="hidden lg:block" /> Health
           </h1>
 
-          <h1 className="text-xl lg:text-4xl font-semibold py-2">
+          <h1 className="text-xl md:text-3xl lg:text-4xl font-semibold py-2">
             Internal Medicine & General Physician
           </h1>
 
-          <h3 className="text-sm lg:text-base max-w-lg py-2">
+          <h3 className="text-sm lg:text-2xl max-w-lg py-2 md:text-2xl">
             Internal medicine focuses on the diagnosis, treatment, and
             prevention of adult diseases. General physicians, specializing in
             internal medicine, manage a wide range of health issues, including

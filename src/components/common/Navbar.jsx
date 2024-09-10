@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="fixed lg:top-12 top-40 left-0 w-full bg-white dark:bg-gray-900 z-40">
+      <nav className="fixed lg:top-12 top-0 left-0 w-full bg-white dark:bg-gray-900 z-40">
         {/* Adjusted the top property to 12 to sit below the Top component */}
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -94,7 +94,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl"
                 >
                   Contact
