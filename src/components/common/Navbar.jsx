@@ -1,7 +1,6 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { useState } from "react";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -11,15 +10,23 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    // Automatically close the menu when a link is clicked
+    setIsMenuOpen(false);
+  };
+
   return (
     <div>
       <nav className="fixed lg:top-12 top-0 left-0 w-full bg-white dark:bg-gray-900 z-40">
         {/* Adjusted the top property to 12 to sit below the Top component */}
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link
+            href="/"
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
             <Image
               src="/logo/DrSantoshLogo.png"
-              alt="/"
+              alt="Logo"
               width={300}
               height={250}
               className=""
@@ -61,8 +68,9 @@ const Navbar = () => {
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <Link
-                  href="#"
-                  className="block py-2 px-3 rounded font-semibold text-xl hover:text-[#00867f]"
+                  href="/"
+                  onClick={handleLinkClick}
+                  className="block py-2 px-3 rounded font-semibold text-xl hover:text-[#00867f] transition-colors duration-200 ease-in-out"
                   aria-current="page"
                 >
                   Home
@@ -70,24 +78,27 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 hover:text-[#00867f] rounded font-semibold text-xl"
+                  href="/about"
+                  onClick={handleLinkClick}
+                  className="block py-2 px-3 text-gray-900 hover:text-[#00867f] rounded font-semibold text-xl transition-colors duration-200 ease-in-out"
                 >
                   About
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl"
+                  href="/services"
+                  onClick={handleLinkClick}
+                  className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl transition-colors duration-200 ease-in-out"
                 >
                   Services
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl"
+                  href="/blogs"
+                  onClick={handleLinkClick}
+                  className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl transition-colors duration-200 ease-in-out"
                 >
                   Blogs
                 </Link>
@@ -95,7 +106,8 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/contact"
-                  className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl"
+                  onClick={handleLinkClick}
+                  className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl transition-colors duration-200 ease-in-out"
                 >
                   Contact
                 </Link>

@@ -3,6 +3,8 @@ import Image from "next/image";
 import { FaXTwitter, FaFacebookF, FaLocationDot } from "react-icons/fa6";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { IoIosCall } from "react-icons/io";
+import { FiInstagram } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa6";
 import Link from "next/link";
 
 const Footer = () => {
@@ -23,13 +25,19 @@ const Footer = () => {
               className=""
             />
             <div className="flex gap-4 lg:mt-0 mt-10">
-              <Link href="/">
-                <FaXTwitter className="text-4xl bg-blue-500 rounded-full p-2" />
+              <Link href="https://www.instagram.com/drsantoshghai/" target="__black">
+                <FiInstagram className="text-4xl bg-blue-500 rounded-full p-2" />
               </Link>
-              <Link href="/">
+
+              <Link href="https://www.facebook.com/profile.php?id=61562238766058" target="__black">
                 <FaFacebookF className="text-4xl bg-blue-800 rounded-full p-2" />
               </Link>
-              <Link href="/">
+
+              <Link href="https://www.linkedin.com/" target="__black">
+                <FaLinkedinIn className="text-4xl bg-blue-800 rounded-full p-2" />
+              </Link>
+
+              <Link href="https://www.youtube.com/channel/UCueXPbbshhW8VtgU9BoPaqA" target="__black">
                 <AiOutlineYoutube className="text-4xl bg-red-500 rounded-full p-2" />
               </Link>
             </div>
@@ -107,9 +115,8 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <FaLocationDot className="lg:text-5xl text-blue-700 text-4xl" />
                 <p className="">
-                  JEEWAN HOSPITAL - 2-B, Pusa Road, Next to Karol Bagh, 108,
-                  Sadhu Vasvani Marg, opp. Pillar No.-107, Rajinder Nagar, New
-                  Delhi, Delhi 11000
+                  108 Pillar No. 107, 2-B, Pusa Rd, next to Karol Bagh, Block 18
+                  A, Rajinder Place, Karol Bagh, New Delhi, Delhi, 110005
                 </p>
               </div>
               <Link href="/">
