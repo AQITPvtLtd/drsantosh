@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { RiHeartAdd2Fill } from "react-icons/ri";
 import { TiTick } from "react-icons/ti";
 import { FaHandHoldingHeart } from "react-icons/fa";
@@ -111,6 +112,15 @@ const Facilities = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-center py-5">
+        <Link
+          href="/services"
+          className="bg-[#04b67c] text-white p-3 rounded-md hover:bg-green-700 transition duration-300"
+        >
+          Know More
+        </Link>
       </div>
     </div>
   );
