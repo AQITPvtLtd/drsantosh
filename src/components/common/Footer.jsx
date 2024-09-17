@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { FaXTwitter, FaFacebookF, FaLocationDot } from "react-icons/fa6";
+import { FaFacebookF, FaLocationDot } from "react-icons/fa6";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { IoIosCall } from "react-icons/io";
 import { FiInstagram } from "react-icons/fi";
@@ -25,11 +25,17 @@ const Footer = () => {
               className=""
             />
             <div className="flex gap-4 lg:mt-0 mt-10">
-              <Link href="https://www.instagram.com/drsantoshghai/" target="__black">
+              <Link
+                href="https://www.instagram.com/drsantoshghai/"
+                target="__black"
+              >
                 <FiInstagram className="text-4xl bg-blue-500 rounded-full p-2" />
               </Link>
 
-              <Link href="https://www.facebook.com/profile.php?id=61562238766058" target="__black">
+              <Link
+                href="https://www.facebook.com/profile.php?id=61562238766058"
+                target="__black"
+              >
                 <FaFacebookF className="text-4xl bg-blue-800 rounded-full p-2" />
               </Link>
 
@@ -37,7 +43,10 @@ const Footer = () => {
                 <FaLinkedinIn className="text-4xl bg-blue-800 rounded-full p-2" />
               </Link>
 
-              <Link href="https://www.youtube.com/channel/UCueXPbbshhW8VtgU9BoPaqA" target="__black">
+              <Link
+                href="https://www.youtube.com/channel/UCueXPbbshhW8VtgU9BoPaqA"
+                target="__black"
+              >
                 <AiOutlineYoutube className="text-4xl bg-red-500 rounded-full p-2" />
               </Link>
             </div>
@@ -50,16 +59,16 @@ const Footer = () => {
               <h1 className="font-bold underline mb-4 text-3xl">Company</h1>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/">About Us</Link>
+                  <Link href="/about">About Us</Link>
                 </li>
                 <li>
-                  <Link href="/">Services</Link>
+                  <Link href="/services">Services</Link>
                 </li>
                 <li>
-                  <Link href="/">Blogs</Link>
+                  <Link href="/blogs">Blogs</Link>
                 </li>
                 <li>
-                  <Link href="/">Contact Us</Link>
+                  <Link href="/contact">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -69,22 +78,19 @@ const Footer = () => {
               <h1 className="font-bold underline mb-4 text-3xl">Services</h1>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/">Order Medicines</Link>
+                  <Link href="/services">Diabetes</Link>
                 </li>
                 <li>
-                  <Link href="/">Book Lab Tests</Link>
+                  <Link href="/services">Hypertension</Link>
                 </li>
                 <li>
-                  <Link href="/">Consult a Doctor</Link>
+                  <Link href="/services">Headaches</Link>
                 </li>
                 <li>
-                  <Link href="/">Ayurveda Articles</Link>
+                  <Link href="/services">Anemia</Link>
                 </li>
                 <li>
-                  <Link href="/">English Articles</Link>
-                </li>
-                <li>
-                  <Link href="/">1mg Care Plan</Link>
+                  <Link href="/services">Kidney Disease</Link>
                 </li>
               </ul>
             </div>
@@ -113,17 +119,21 @@ const Footer = () => {
               <h1 className="font-bold underline mb-4 text-3xl">Contact</h1>
 
               <div className="flex items-center gap-2">
-                <FaLocationDot className="lg:text-5xl text-blue-700 text-4xl" />
-                <p className="">
+                <div className="lg:text-2xl text-3xl">
+                  <FaLocationDot className="text-blue-700" />
+                </div>
+                <p>
                   108 Pillar No. 107, 2-B, Pusa Rd, next to Karol Bagh, Block 18
                   A, Rajinder Place, Karol Bagh, New Delhi, Delhi, 110005
                 </p>
               </div>
-              <Link href="/">
-                <p className="flex items-center gap-2 mt-2">
-                  <IoIosCall className="text-blue-700 text-2xl" /> +91
-                  9999137803
-                </p>
+              <Link href="tel:+919999137803">
+                <div className="flex items-center gap-2">
+                  <div className="lg:text-2xl text-3xl">
+                    <IoIosCall className="text-blue-700" />
+                  </div>
+                  <p className="flex items-center gap-2 mt-2">+91 9999137803</p>
+                </div>
               </Link>
             </div>
 

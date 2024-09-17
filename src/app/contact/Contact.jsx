@@ -50,10 +50,12 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
             <div className="flex flex-col space-y-6 w-full ">
               <div className="flex items-center">
-                <IoLocationSharp
-                  aria-label="Location Icon"
-                  className="text-4xl text-white bg-[#04b67c] p-1 rounded-full"
-                />
+                <div className="text-4xl">
+                  <IoLocationSharp
+                    aria-label="Location Icon"
+                    className=" text-white p-1 bg-[#04b67c] rounded-full"
+                  />
+                </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Our Address</h3>
                   <p className="text-gray-700">
@@ -78,10 +80,12 @@ const Contact = () => {
 
               <Link href="mailto:officialsantoshghai@gmail.com">
                 <div className="flex items-center cursor-pointer">
-                  <MdEmail
-                    aria-label="Email Icon"
-                    className="text-4xl text-white bg-[#04b67c] p-1 rounded-full"
-                  />
+                  <div className="text-4xl">
+                    <MdEmail
+                      aria-label="Email Icon"
+                      className="text-4xl text-white bg-[#04b67c] p-1 rounded-full"
+                    />
+                  </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold">Email Address</h3>
                     <p className="text-gray-700">
@@ -92,56 +96,62 @@ const Contact = () => {
               </Link>
             </div>
 
-            <div className="flex flex-col">
-              <div className="flex flex-col gap-y-5">
-                <form onSubmit={handleSubmit} className="py-2">
-                  <input
-                    type="text"
-                    placeholder="Your name"
-                    className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                  />
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Your Phone Number"
-                    className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                  />
-                  {/* <input
+            <form onSubmit={handleSubmit} className="gap-y-5">
+              <div className="py-3">
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+
+              <div className="pb-2">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+
+              <div className="pb-2">
+                <input
+                  type="tel"
+                  placeholder="Your Phone Number"
+                  className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              {/* <input
                     type="text"
                     placeholder="Subject"
                     className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
                     required
                   /> */}
-                  <textarea
-                    placeholder="Write your message..."
-                    className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] h-32 w-full"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                  ></textarea>
-                  <button className="bg-[#04b67c] text-white p-3 rounded-md hover:bg-green-700 transition duration-300">
-                    Send Message
-                  </button>
-                </form>
+              <div className="pb-2">
+                <textarea
+                  placeholder="Write your message..."
+                  className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] h-32 w-full"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                ></textarea>
               </div>
-            </div>
+              <button className="bg-[#04b67c] text-white p-3 rounded-md hover:bg-green-700 transition duration-300">
+                Send Message
+              </button>
+            </form>
 
             <div className="map-container">
               <iframe
