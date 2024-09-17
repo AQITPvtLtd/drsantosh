@@ -1,9 +1,5 @@
-import mysql from "mysql2";
+import axios from "axios";
 
-const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "drsantoshghai",
+export const httpAxios = axios.create({
+  baseURL: process.env.BASE_URL,
 });
-export default connection;

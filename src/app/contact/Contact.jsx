@@ -15,6 +15,7 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
+    message: "",
     subject: "",
   });
 
@@ -132,22 +133,28 @@ const Contact = () => {
                   required
                 />
               </div>
-              {/* <input
-                    type="text"
-                    placeholder="Subject"
-                    className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
-                    required
-                  /> */}
               <div className="pb-2">
-                <textarea
-                  placeholder="Write your message..."
-                  className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] h-32 w-full"
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
                   required
+                />
+              </div>
+              <div className="pb-2">
+                <textarea
+                  placeholder="Write your message..."
+                  className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] h-32 w-full"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
                 ></textarea>
               </div>
+
               <button className="bg-[#04b67c] text-white p-3 rounded-md hover:bg-green-700 transition duration-300">
                 Send Message
               </button>

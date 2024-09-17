@@ -1,4 +1,4 @@
-import { httpAxios } from "@/helper/db";
+import { httpAxios } from "@/helper/httpHelper";
 
 export async function form(formData) {
   try {

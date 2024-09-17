@@ -1,20 +1,20 @@
 import nodemailer from "nodemailer";
-import connection from "@/helper/httpHelper";
+import connection from "@/helper/db";
 import { NextResponse } from "next/server";
 import { v4 as uuid } from "uuid";
 
 export async function POST(request) {
   try {
-    const { name, email, phone, subject } = await request.json();
+    const { name, email, phone, message ,subject } = await request.json();
     const unique_id = uuid();
     {
-      console.log({ name, email, phone, subject });
-    }
+      console.log({ name, email, phone, message ,subject });
+    } 
     // Insert data into the database
     await new Promise((resolve, reject) => {
       connection.query(
-        "INSERT INTO contact(id, name ,email ,phone ,subject) VALUES (?, ?, ?, ?, ?)",
-        [unique_id, name, email, phone, subject],
+        "INSERT INTO contact(id, name ,email ,phone , message ,subject) VALUES (?, ?, ?, ?, ?, ?)",
+        [unique_id, name, email, phone, message ,subject],
         (err, results, fields) => {
           if (err) {
             console.error(err);
@@ -59,8 +59,10 @@ export async function POST(request) {
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
               <h3>You've got a new mail from ${name}, their email is: ✉️${email} </h3>
               <div style="font-size: 16px; font:bold">
-              <p>Query:</p>
               <p>${subject}</p>
+              <p>Query:</p>
+              <p>${message}</p>
+              
               <br>
               </div>
               </div>
