@@ -20,6 +20,32 @@ const About = () => {
 
       <DrSantosh />
 
+      {/* Qualifications */}
+      <div className="lg:grid grid-cols-12 md:gap-40">
+        <div className="col-start-2 col-span-4 sm:p-3 lg:p-0 p-2">
+          <div className="bg-[#00867e] p-2 rounded-xl">
+            <Image
+              src="/About/qualification1.png"
+              width={500}
+              height={600}
+              alt="Vision Image"
+              className="rounded-lg -translate-x-4 -translate-y-4"
+            />
+          </div>
+        </div>
+        <div className="col-span-4">
+          <h1 className="font-bold text-4xl text-center text-[#04b67c] sm:mt-5 lg:mt-0">Qualification</h1>
+
+          <div className="space-y-7">
+            <p className="rounded-3xl shadow-2xl p-5">
+              MBBS - Rajiv Gandhi University Of Health Sciences, Karnataka, 2006
+            </p>
+            <p className="rounded-3xl shadow-2xl p-5">
+              MD - General Medicine - H.I.H.T. University, Derahdun, 2013
+            </p>
+          </div>
+        </div>
+      </div>
       {/* Our Vision */}
       <div className="mt-10">
         <div

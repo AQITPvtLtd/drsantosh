@@ -37,7 +37,7 @@ const Faq = () => {
               aria-controls="accordion-collapse-body-1"
             >
               <span className="font-semibold lg:text-xl">
-                The expense windows adapted sir. Wrong widen drawn.
+                Who is Dr. Santosh Ghai?
               </span>
               <IoMdAdd className="w-12 h-12 text-black" />
             </button>
@@ -49,9 +49,13 @@ const Faq = () => {
           >
             <div className="p-5 border-x-1 border-black">
               <p className="mb-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
+                Dr. Santosh Ghai is a dynamic and skilled medical practitioner
+                who is currently working as a Consultant in the Department of
+                General Medicine at BLK Super Speciality Hospital New Delhi. He
+                has nearly 11 years of experience in the field of Internal
+                Medicine. Dr. Santosh Ghai has studied MBBS from a prestigious
+                institute. He has attended several conferences at national and
+                international level.
               </p>
             </div>
           </div>
@@ -68,7 +72,7 @@ const Faq = () => {
               aria-controls="accordion-collapse-body-2"
             >
               <span className="font-semibold lg:text-xl">
-                Six curiosity day assurance bed necessary?
+                Why do patients visit Dr. Santosh Ghai?
               </span>
               <IoMdAdd className="w-12 h-12 text-black" />
             </button>
@@ -80,9 +84,8 @@ const Faq = () => {
           >
             <div className="p-5 border-x-1 border-black">
               <p className="mb-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
+                Patients frequently visit Dr. Santosh Ghai for 
+                Diabetes, Hypertension, Headaches, Anemia, Kidney Disease, Thyroid and Liver Disease.
               </p>
             </div>
           </div>
@@ -99,7 +102,7 @@ const Faq = () => {
               aria-controls="accordion-collapse-body-3"
             >
               <span className="font-semibold lg:text-xl">
-                Produce say the ten moments parties?
+                What is Dr. Santosh Ghai's education qualification?
               </span>
               <IoMdAdd className="w-12 h-12 text-black" />
             </button>
@@ -111,9 +114,8 @@ const Faq = () => {
           >
             <div className="p-5 border-x-1 border-black">
               <p className="mb-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
+                Dr. Santosh Ghai has the following qualifications - MBBS, MD -
+                General Medicine.
               </p>
             </div>
           </div>
@@ -130,7 +132,7 @@ const Faq = () => {
               aria-controls="accordion-collapse-body-4"
             >
               <span className="font-semibold lg:text-xl">
-                Simple innate summer fat appear basket his desire joy?
+                What does Dr. Santosh Ghai specialises in ?
               </span>
               <IoMdAdd className="w-12 h-12 text-black" />
             </button>
@@ -142,9 +144,8 @@ const Faq = () => {
           >
             <div className="p-5 border-x-1 border-black">
               <p className="mb-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
+                Dr. Santosh Ghai specialises as Internal Medicine, General
+                Physician.
               </p>
             </div>
           </div>
@@ -161,7 +162,7 @@ const Faq = () => {
               aria-controls="accordion-collapse-body-5"
             >
               <span className="font-semibold lg:text-xl">
-                Outward clothes promise at gravity do exited?
+                How many years of experience does Dr. Santosh Ghai have?
               </span>
               <IoMdAdd className="w-12 h-12 text-black" />
             </button>
@@ -173,9 +174,7 @@ const Faq = () => {
           >
             <div className="p-5 border-x-1 border-black">
               <p className="mb-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
+                Dr. Santosh Ghai has an overall experience of 11 years.
               </p>
             </div>
           </div>

@@ -19,7 +19,7 @@ const Navbar = () => {
     <div>
       <nav className="fixed lg:top-10 top-0 left-0 w-full bg-white dark:bg-gray-900 z-40">
         {/* Adjusted the top property to 12 to sit below the Top component */}
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
