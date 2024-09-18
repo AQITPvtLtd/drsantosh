@@ -34,7 +34,9 @@ const About = () => {
           </div>
         </div>
         <div className="col-span-4">
-          <h1 className="font-bold text-4xl text-center text-[#04b67c] sm:mt-5 lg:mt-0">Qualification</h1>
+          <h1 className="font-bold text-4xl text-center text-[#04b67c] sm:mt-5 lg:mt-0">
+            Qualification
+          </h1>
 
           <div className="space-y-7">
             <p className="rounded-3xl shadow-2xl p-5">
