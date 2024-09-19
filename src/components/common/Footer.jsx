@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className=" text-white pt-16">
+    <div className="text-white pt-16">
       <div
         className="relative w-full h-full bg-cover bg-center"
         style={{ backgroundImage: "url(Footer/bgimg.png)" }}
@@ -53,11 +53,16 @@ const Footer = () => {
           </div>
 
           {/* Grid section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:px-24">
+          <div className="lg:grid grid-cols-12">
             {/* Company Info */}
-            <div>
-              <h1 className="font-bold underline mb-4 text-3xl">Company</h1>
+            <div className="col-start-2 col-span-3">
+              <h1 className="font-bold underline mb-4 text-2xl lg:text-3xl underline-offset-4">
+                Company
+              </h1>
               <ul className="space-y-2">
+                <li>
+                  <Link href="/">Home</Link>
+                </li>
                 <li>
                   <Link href="/about">About Us</Link>
                 </li>
@@ -74,8 +79,10 @@ const Footer = () => {
             </div>
 
             {/* Services */}
-            <div>
-              <h1 className="font-bold underline mb-4 text-3xl">Services</h1>
+            <div className="col-span-3 mt-5 lg:mt-0">
+              <h1 className="font-bold underline mb-4 text-2xl lg:text-3xl underline-offset-4">
+                Services
+              </h1>
               <ul className="space-y-2">
                 <li>
                   <Link href="/services">Diabetes</Link>
@@ -95,30 +102,12 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Fun Facts */}
-            <div>
-              <h1 className="font-bold underline mb-4 text-3xl">Fun Facts</h1>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-4xl font-bold">160M+</p>
-                  <span className="text-blue-700">Visitors</span>
-                </div>
-                <div>
-                  <p className="text-4xl font-bold">27M+</p>
-                  <span className="text-blue-700">Orders Delivered</span>
-                </div>
-                <div>
-                  <p className="text-4xl font-bold">190K+</p>
-                  <span className="text-blue-700">Cities</span>
-                </div>
-              </div>
-            </div>
-
             {/* Contact Info */}
-            <div>
-              <h1 className="font-bold underline mb-4 text-3xl">Contact</h1>
-
-              <div className="flex items-center gap-2">
+            <div className="col-span-4 mt-5 lg:mt-0 lg:pb-0 pb-4">
+              <h1 className="font-bold underline mb-4 text-2xl lg:text-3xl underline-offset-4">
+                Contact
+              </h1>
+              <div className="flex items-start gap-2">
                 <div className="lg:text-2xl text-3xl">
                   <FaLocationDot className="text-blue-700" />
                 </div>
@@ -128,29 +117,13 @@ const Footer = () => {
                 </p>
               </div>
               <Link href="tel:+919999137803">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 mt-2">
                   <div className="lg:text-2xl text-3xl">
                     <IoIosCall className="text-blue-700" />
                   </div>
-                  <p className="flex items-center gap-2 mt-2">+91 9999137803</p>
+                  <p className="text-lg">+91 9999137803</p>
                 </div>
               </Link>
-            </div>
-
-            {/* Newsletter */}
-            <div className="col-span-1 md:col-span-2 lg:col-span-1 pb-14">
-              <h1 className="font-bold underline mb-4 text-3xl">Newsletter</h1>
-              <p className="mb-4">
-                Get a free subscription to our health & fitness updates
-              </p>
-              <input
-                type="text"
-                placeholder="Enter Your email"
-                className="w-full mb-3 rounded-full px-5 py-3 border-none bg-white text-gray-900"
-              />
-              <button className="w-full py-3 bg-blue-400 text-white rounded-full">
-                Subscribe
-              </button>
             </div>
           </div>
         </div>
