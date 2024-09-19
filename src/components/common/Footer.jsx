@@ -15,7 +15,7 @@ const Footer = () => {
           className="relative w-full h-full bg-cover bg-center"
           style={{ backgroundImage: "url(Footer/bgimg.png)" }}
         >
-          <div className="container mx-auto px-6 lg:py-16 sm:py-12">
+          <div className="container mx-auto px-6 lg:py-5 sm:py-12">
             {/* Top section */}
             <div className="flex flex-wrap items-center justify-between py-10">
               <Image
