@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
 import Link from "next/link";
 import { form } from "@/services/form";
+import Image from "next/image";
 
 const Contact = () => {
   const router = useRouter();
@@ -44,10 +45,23 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <div className=" bg-white mt-[200px] flex justify-center">
+    <div className="mt-[125px]">
+      <div className="relative">
+        <Image
+          src="/contact/santoshCon.jpeg"
+          width={800}
+          height={800}
+          className="w-full h-[250px] object-cover"
+          alt="service Image"
+        />
+        <div className="absolute inset-0 bg-[#04b67c] opacity-70 z-10"></div>
+        <h1 className="text-white font-serif text-center text-6xl font-bold my-4 absolute inset-0 z-20 flex items-center justify-center">
+          Get in Touch
+        </h1>
+      </div>
+      <div className="bg-white flex justify-center mt-[50px]">
         <div className="w-full max-w-6xl flex flex-col items-center px-10">
-          <h2 className="text-4xl font-bold text-center mb-8">Get in Touch</h2>
+          {/* <h2 className="text-4xl font-bold text-center mb-8"></h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
             <div className="flex flex-col space-y-6 w-full ">
               <div className="flex items-center">

@@ -3,7 +3,7 @@ import "animate.css";
 import Image from "next/image";
 const Blog = () => {
   return (
-    <div className="mt-[200px]">
+    <div className="mt-[125px]">
       <div className="relative">
         <Image
           src="/Blog/blog.avif"

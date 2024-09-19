@@ -3,7 +3,7 @@ import Image from "next/image";
 import DrSantosh from "@/components/homepage/DrSantosh";
 const About = () => {
   return (
-    <div className="mt-[200px]">
+    <div className="mt-[125px]">
       <div className="relative">
         <Image
           src="/About/about.png"
