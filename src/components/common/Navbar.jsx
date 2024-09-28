@@ -17,9 +17,9 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="fixed lg:top-[68px] xl:top-10 top-0 left-0 w-full bg-white dark:bg-gray-900 z-40">
+      <nav className="fixed lg:top-[68px] xl:top-10 top-0 left-0 w-full bg-white dark:bg-gray-900 z-40 dark:text-white">
         {/* Adjusted the top property to 12 to sit below the Top component */}
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2 dark:text-white">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -70,7 +70,7 @@ const Navbar = () => {
                 <Link
                   href="/"
                   onClick={handleLinkClick}
-                  className="block py-2 px-3 rounded font-semibold text-xl hover:text-[#00867f] transition-colors duration-200 ease-in-out"
+                  className="block py-2 px-3 rounded font-semibold text-xl hover:text-[#00867f] transition-colors duration-200 ease-in-out dark:text-white"
                   aria-current="page"
                 >
                   Home
@@ -80,7 +80,7 @@ const Navbar = () => {
                 <Link
                   href="/about"
                   onClick={handleLinkClick}
-                  className="block py-2 px-3 text-gray-900 hover:text-[#00867f] rounded font-semibold text-xl transition-colors duration-200 ease-in-out"
+                  className="block py-2 px-3 text-gray-900 hover:text-[#00867f] rounded font-semibold text-xl transition-colors duration-200 ease-in-out dark:text-white"
                 >
                   About
                 </Link>
@@ -89,7 +89,7 @@ const Navbar = () => {
                 <Link
                   href="/services"
                   onClick={handleLinkClick}
-                  className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl transition-colors duration-200 ease-in-out"
+                  className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl transition-colors duration-200 ease-in-out dark:text-white"
                 >
                   Services
                 </Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
                 <Link
                   href="/blogs"
                   onClick={handleLinkClick}
-                  className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl transition-colors duration-200 ease-in-out"
+                  className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl transition-colors duration-200 ease-in-out dark:text-white"
                 >
                   Blogs
                 </Link>
@@ -107,7 +107,7 @@ const Navbar = () => {
                 <Link
                   href="/contact"
                   onClick={handleLinkClick}
-                  className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl transition-colors duration-200 ease-in-out"
+                  className="block py-2 px-3 text-gray-900 rounded hover:text-[#00867f] font-semibold text-xl transition-colors duration-200 ease-in-out dark:text-white"
                 >
                   Contact
                 </Link>

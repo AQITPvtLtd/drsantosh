@@ -1,9 +1,16 @@
-import mysql from "mysql2";
+import mysql from "mysql2/promise";
 
-const connection = mysql.createConnection({
+const pool = mysql.createPool({
   host: "localhost",
   user: "root",
   password: "",
   database: "drsantoshghai",
+  waitForConnections: true,
+  // connectionLimit: 10,
+  // queueLimit: 0,
+  // acquireTimeout: 10000,
+  // connectTimeout: 10000,
+  // multipleStatements: true,
 });
-export default connection;
+
+export default pool;

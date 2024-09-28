@@ -5,10 +5,10 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <div>
-      <div className="hidden lg:block">
+      <div className="hidden lg:block dark:text-white">
         <Top />
       </div>
-      <Navbar />
+      <Navbar className="dark:text-white" />
     </div>
   );
 };
