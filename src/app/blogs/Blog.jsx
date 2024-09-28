@@ -64,8 +64,8 @@ const Blog = () => {
                   <p className="text-gray-800 text-sm mb-4">{n.date}</p>
                 </div>
                 <p
-                  className="text-gray-700"
-                  dangerouslySetInnerHTML={{ __html: n.shortdesc}}
+                  className="text-gray-700 line-clamp-3"
+                  dangerouslySetInnerHTML={{ __html: n.description}}
                 ></p>
                 <Link href={`/blogs/${n.id}`} className="flex mb-3 py-4">
                   <div className="bg-[#07a496] p-3 text-white rounded-xl">

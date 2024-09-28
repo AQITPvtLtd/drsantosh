@@ -24,7 +24,7 @@ const Sidebar = () => {
 
   return (
     <div>
-      <div className="sm:mt-[75px] lg:mt-[100px] mt-[75px] px-4 sm:px-6 lg:px-8 p-6 border-2 rounded-2xl h-screen">
+      <div className="sm:mt-[75px] lg:mt-[100px] mt-[75px] sm:px-6 lg:px-8 border-2 rounded-2xl h-screen">
         <ul className="h-screen">
           <div className="">
             <p className="text-[#07a496] font-semibold text-2xl py-2 ">
@@ -40,9 +40,10 @@ const Sidebar = () => {
                   className="flex hover:translate-x-2 transition duration-300 ease-in-out"
                 >
                   <div className="flex gap-1 items-center hover:text-[#07a496]">
-                    <AiOutlineDoubleRight />
-
-                    <h2 className="text-xl font-medium">{n.name}</h2>
+                    <div className="text-2xl">
+                      <AiOutlineDoubleRight />
+                    </div>
+                    <h2 className="text-xl font-medium">{n.short_name}</h2>
                   </div>
                 </Link>
               </div>
