@@ -24,7 +24,7 @@ const Sidebar = () => {
 
   return (
     <div>
-      <div className="sm:mt-[75px] lg:mt-[100px] mt-[75px] sm:px-6 lg:px-8 border-2 rounded-2xl h-screen">
+      <div className="sm:px-6 lg:px-8 border-2 rounded-2xl h-screen">
         <ul className="h-screen">
           <div className="">
             <p className="text-[#07a496] font-semibold text-2xl py-2 ">

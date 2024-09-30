@@ -32,7 +32,7 @@ const DetailedBlog = ({ id }) => {
       {/* Header Section */}
       <div className="relative mb-10">
         <Image
-          src="/Blog/background.png"
+          src="/Blog/blog.avif"
           width={1000}
           height={1000}
           className="w-full h-[250px] object-cover"
@@ -46,7 +46,7 @@ const DetailedBlog = ({ id }) => {
 
   
 
-      <ul className="lg:grid grid-cols-12 p-5 gap-8 mt-10">
+      <ul className="lg:grid grid-cols-12 p-5 gap-8">
         <div className="col-start-1 col-span-9">
           {blogs.map((obj) => (
             <li
@@ -61,7 +61,7 @@ const DetailedBlog = ({ id }) => {
                 width={1000}
               />
               <div className="p-4">
-                <div className="flex items-center gap-2 text-gray-600 mb-2">
+                <div className="flex gap-2 text-gray-600 mb-2">
                   <SlCalender className="text-xl" />
                   <span className="text-sm">{obj.date}</span>
                 </div>
@@ -77,7 +77,7 @@ const DetailedBlog = ({ id }) => {
           ))}
         </div>
 
-        <div className="col-span-3">
+        <div className="col-span-3 lg:block hidden">
           <Sidebar />
         </div>
       </ul>
