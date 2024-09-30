@@ -2,19 +2,18 @@
 import nodemailer from "nodemailer";
 import pool from "@/helper/db";
 import { NextResponse } from "next/server";
-import { v4 as uuid } from "uuid";
-
+import { v4 as uuidv4 } from "uuid";
 export async function POST(request) {
   try {
     const { name, email, phone, message, subject } = await request.json();
-    const unique_id = uuid();
+    const unique_id = uuidv4();
     {
       console.log({ name, email, phone, message, subject });
     }
     // Use pool.query with async/await for promises
 
     const [results] = await pool.query(
-      "INSERT INTO contact(id, name ,email ,phone , message ,subject) VALUES (?, ?, ?, ?, ?, ?)",
+      "INSERT INTO contact(id, name ,email ,phone , message ,subject) VALUES (?, ?, ?, ?, ?, ?)" ,
       [unique_id, name, email, phone, message, subject]
     );
 
