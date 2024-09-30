@@ -5,8 +5,9 @@ import { getBlog } from "@/services/getBlog";
 import Link from "next/link";
 import Image from "next/image";
 import Sidebar from "../Sidebar";
-
+import Moment from "react-moment";
 const DetailedBlog = ({ id }) => {
+  console.log(id)
   const [blogs, setBlogs] = useState([]);
   const [error, setError] = useState(null);
   const obj = blogs.find((item) => item.id == id);
@@ -63,7 +64,7 @@ const DetailedBlog = ({ id }) => {
               <div className="p-4">
                 <div className="flex gap-2 text-gray-600 mb-2">
                   <SlCalender className="text-xl" />
-                  <span className="text-sm">{obj.date}</span>
+                  <span className="text-sm"><Moment format="MMMM DD, YYYY">{obj.date}</Moment></span>
                 </div>
                 <h2 className="text-2xl font-bold text-gray-800 mb-3">
                   {obj.name}
