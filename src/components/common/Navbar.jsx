@@ -27,8 +27,8 @@ const Navbar = () => {
             <Image
               src="/logo/DrSantoshLogo.png"
               alt="Logo"
-              width={300}
-              height={250}
+              width={280}
+              height={230}
               className=""
             />
           </Link>
