@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 28, 2024 at 07:47 PM
+-- Generation Time: Sep 30, 2024 at 09:27 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -53,13 +53,20 @@ INSERT INTO `blog` (`id`, `name`, `short_name`, `short_desc`, `image`, `descript
 --
 
 CREATE TABLE `contact` (
-  `id` int(11) NOT NULL,
+  `id` varchar(200) NOT NULL,
   `name` varchar(200) NOT NULL,
   `email` varchar(200) NOT NULL,
   `phone` varchar(200) NOT NULL,
   `subject` varchar(200) NOT NULL,
   `message` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `name`, `email`, `phone`, `subject`, `message`) VALUES
+('7966a3d3-f010-4767-ac6d-bb1577a57c8f', 'golu', 'mamta296076@gmail.com', '9958461283', 'website testing', 'web...');
 
 --
 -- Indexes for dumped tables
