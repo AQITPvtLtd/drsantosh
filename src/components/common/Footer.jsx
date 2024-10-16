@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaFacebookF, FaLocationDot } from "react-icons/fa6";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { IoIosCall } from "react-icons/io";
+import { IoIosMail } from "react-icons/io";
 import { FiInstagram } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa6";
 import Link from "next/link";
@@ -108,16 +109,19 @@ const Footer = () => {
                 <h1 className="font-bold underline mb-4 text-2xl lg:text-3xl underline-offset-4">
                   Contact
                 </h1>
-                <div className="flex items-start gap-2">
-                  <div className="lg:text-2xl text-3xl">
-                    <FaLocationDot className="text-blue-700" />
+                <Link href="https://www.google.com/maps/dir//Dr+Santosh+Ghai+%7C+Best+General+Physician+in+Karol+Bagh+%7C+General+Physician+in+New+Delhi+108+Pillar+No.+107+2-B,+Pusa+Rd,+next+to+Karol+Bagh,+Block+18+A,+Rajinder+Place,+Karol+Bagh+New+Delhi,+Delhi,+110005/@28.645151,77.1958129,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390cfd209d53079b:0x4498aadd3d84e14f!2m2!1d77.1958129!2d28.645151?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D" target="__blank">
+                  <div className="flex items-start gap-2 cursor-pointer">
+                    <div className="lg:text-2xl text-3xl">
+                      <FaLocationDot className="text-blue-700" />
+                    </div>
+                    <p>
+                      108 Pillar No. 107, 2-B, Pusa Rd, next to Karol Bagh,
+                      Block 18 A, Rajinder Place, Karol Bagh, New Delhi, Delhi,
+                      110005
+                    </p>
                   </div>
-                  <p>
-                    108 Pillar No. 107, 2-B, Pusa Rd, next to Karol Bagh, Block
-                    18 A, Rajinder Place, Karol Bagh, New Delhi, Delhi, 110005
-                  </p>
-                </div>
-                <Link href="tel:+919999137803">
+                </Link>
+                <Link href="tel:+919999137803" target="__blank">
                   <div className="flex items-center gap-2 mt-2">
                     <div className="lg:text-2xl text-3xl">
                       <IoIosCall className="text-blue-700" />
@@ -125,20 +129,30 @@ const Footer = () => {
                     <p className="text-lg">+91 9999137803</p>
                   </div>
                 </Link>
-              </div>
 
-              
+                <Link
+                  href="mailto:officialsantoshghai@gmail.com"
+                  target="__blank"
+                >
+                  <div className="flex items-center gap-2 mt-2">
+                    <div className="lg:text-2xl text-3xl">
+                      <IoIosMail className="text-blue-700" />
+                    </div>
+                    <p className="text-lg">officialsantoshghai@gmail.com</p>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
-          <Link href="https://tekbooster.com/" className="flex justify-center text-center font-semibold items-center p-2" target="__blank">
-          Design & Develope By Tek Booster (Digital Marketing Company)
-        </Link> 
+          <Link
+            href="https://tekbooster.com/"
+            className="flex justify-center text-center font-semibold items-center p-2"
+            target="__blank"
+          >
+            Design & Develope By Tek Booster (Digital Marketing Company)
+          </Link>
         </div>
       </div>
-
-      
-       
-      
     </div>
   );
 };

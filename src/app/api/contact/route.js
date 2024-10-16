@@ -1,4 +1,3 @@
-// import uuid from "uuid";
 import nodemailer from "nodemailer";
 import pool from "@/helper/db";
 import { NextResponse } from "next/server";
