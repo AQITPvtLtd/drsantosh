@@ -1,14 +1,14 @@
 import React from "react";
 import DetailedBlog from "./DetailedBlog";
 
-const page = ({ params }) => {
-  const id = params.url;
-  console.log(id);
+const Page = ({ params }) => {
+  const { url } = params;
+
   return (
     <div>
-      <DetailedBlog id={id}/>
+      <DetailedBlog url={url} />
     </div>
   );
 };
 
-export default page;
+export default Page;

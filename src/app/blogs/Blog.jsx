@@ -48,7 +48,7 @@ const Blog = () => {
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
           {blogs.map((n) => (
             <li
-              key={n.id}
+              key={n.url}
               className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl"
             >
               <Image
