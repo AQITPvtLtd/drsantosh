@@ -11,7 +11,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div>
-      <div className="text-white pt-16 dark:bg-white">
+      <div className="text-white pt-16 dark:bg-white dark:text-black">
         <div
           className="relative w-full h-full bg-cover bg-center"
           style={{ backgroundImage: "url(Footer/bgimg.png)" }}

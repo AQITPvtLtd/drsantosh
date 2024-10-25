@@ -56,7 +56,7 @@ const DetailedBlog = ({ url }) => {
       <div className="lg:grid grid-cols-12 p-5 gap-8">
         <div className="col-start-1 col-span-9">
           {obj ? (
-            <li
+            <span
               key={obj.url}
               className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl mb-6"
             >
@@ -82,7 +82,7 @@ const DetailedBlog = ({ url }) => {
                   dangerouslySetInnerHTML={{ __html: obj?.description }}
                 ></p>
               </div>
-            </li>
+            </span>
           ) : (
             <p className="text-gray-500">Blog not found</p>
           )}
