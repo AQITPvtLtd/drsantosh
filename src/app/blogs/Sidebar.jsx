@@ -39,9 +39,9 @@ const Sidebar = () => {
                   href={`/blogs/${n.url}`}
                   className="flex hover:translate-x-2 transition duration-300 ease-in-out"
                 >
-                  <div className="flex gap-1 items-center hover:text-[#07a496]">
+                  <div className="flex gap-1 hover:text-[#07a496]">
                     <div className="text-2xl">
-                      <AiOutlineDoubleRight />
+                      <AiOutlineDoubleRight className="mt-1" />
                     </div>
                     <h2 className="text-xl font-medium">{n.short_name}</h2>
                   </div>
