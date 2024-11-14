@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const [results] = await pool.query("SELECT * FROM blog");
+    const [results] = await pool.query("SELECT * FROM blog ORDER BY id DESC");
 
     return NextResponse.json({
       message: "Success",
