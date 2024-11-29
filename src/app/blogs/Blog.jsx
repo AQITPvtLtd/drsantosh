@@ -49,7 +49,7 @@ const Blog = () => {
           {blogs.map((n) => (
             <li
               key={n.url}
-              className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl"
+              className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl"
             >
               <Image
                 src={`/Blog/${n.image}`}
