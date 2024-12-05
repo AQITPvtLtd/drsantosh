@@ -70,7 +70,10 @@ const Blog = () => {
                   className="text-gray-700 line-clamp-3"
                   dangerouslySetInnerHTML={{ __html: n.description }}
                 ></p>
-                <Link href={`/blogs/${n.url}`} className="flex mb-3 py-4">
+                <Link
+                  href={`/blogs/${n.id}/${n.url}`}
+                  className="flex mb-3 py-4"
+                >
                   <div className="bg-[#07a496] p-3 text-white rounded-xl">
                     Read More
                   </div>

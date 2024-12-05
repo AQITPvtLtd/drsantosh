@@ -2,15 +2,14 @@
 import { useEffect, useState } from "react";
 import { SlCalender } from "react-icons/sl";
 import { getBlog } from "@/services/getBlog";
-import Link from "next/link";
 import Image from "next/image";
-import Sidebar from "../Sidebar";
+import Sidebar from "../../Sidebar";
 import Moment from "react-moment";
 
-const DetailedBlog = ({ url }) => {
+const DetailedBlog = ({ id, url }) => {
   const [blogs, setBlogs] = useState([]);
   const [error, setError] = useState(null);
-  const obj = blogs.find((item) => item.url === url);
+  const obj = blogs?.find((item) => item.url == url && item.id == id);
 
   useEffect(() => {
     async function fetchBlogs() {
@@ -46,11 +45,7 @@ const DetailedBlog = ({ url }) => {
       </div>
 
       {/* Display Error if exists */}
-      {error && (
-        <div className="text-red-500 text-center mb-4">
-          {error}
-        </div>
-      )}
+      {error && <div className="text-red-500 text-center mb-4">{error}</div>}
 
       {/* Blog List and Sidebar */}
       <div className="lg:grid grid-cols-12 p-5 gap-8">
@@ -74,7 +69,7 @@ const DetailedBlog = ({ url }) => {
                     <Moment format="MMMM DD, YYYY">{obj?.date}</Moment>
                   </span>
                 </div>
-                <h2 className="text-2xl font-bold text-gray-800 mb-3">
+                <h2 className="text-xl font-bold text-gray-800 mb-3">
                   {obj?.name}
                 </h2>
                 <p
