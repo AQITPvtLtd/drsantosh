@@ -8,7 +8,7 @@ const Header = () => {
       <div className="hidden lg:block dark:text-white">
         <Top />
       </div>
-      <Navbar className="dark:text-white" />
+      <Navbar />
     </div>
   );
 };

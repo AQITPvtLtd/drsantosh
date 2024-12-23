@@ -11,7 +11,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div>
-      <div className="text-white pt-16 dark:bg-white dark:text-black">
+      <div className="text-white pt-16 dark:text-white">
         <div
           className="relative w-full h-full bg-cover bg-center"
           style={{ backgroundImage: "url(Footer/bgimg.png)" }}
@@ -109,7 +109,10 @@ const Footer = () => {
                 <h1 className="font-bold underline mb-4 text-2xl lg:text-3xl underline-offset-4">
                   Contact
                 </h1>
-                <Link href="https://www.google.com/maps/dir//Dr+Santosh+Ghai+%7C+Best+General+Physician+in+Karol+Bagh+%7C+General+Physician+in+New+Delhi+108+Pillar+No.+107+2-B,+Pusa+Rd,+next+to+Karol+Bagh,+Block+18+A,+Rajinder+Place,+Karol+Bagh+New+Delhi,+Delhi,+110005/@28.645151,77.1958129,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390cfd209d53079b:0x4498aadd3d84e14f!2m2!1d77.1958129!2d28.645151?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D" target="__blank">
+                <Link
+                  href="https://www.google.com/maps/dir//Dr+Santosh+Ghai+%7C+Best+General+Physician+in+Karol+Bagh+%7C+General+Physician+in+New+Delhi+108+Pillar+No.+107+2-B,+Pusa+Rd,+next+to+Karol+Bagh,+Block+18+A,+Rajinder+Place,+Karol+Bagh+New+Delhi,+Delhi,+110005/@28.645151,77.1958129,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390cfd209d53079b:0x4498aadd3d84e14f!2m2!1d77.1958129!2d28.645151?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+                  target="__blank"
+                >
                   <div className="flex items-start gap-2 cursor-pointer">
                     <div className="lg:text-2xl text-3xl">
                       <FaLocationDot className="text-blue-700" />
