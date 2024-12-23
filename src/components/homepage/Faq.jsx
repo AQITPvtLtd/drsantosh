@@ -84,8 +84,9 @@ const Faq = () => {
           >
             <div className="p-5 border-x-1 border-black">
               <p className="mb-2">
-                Patients frequently visit Dr. Santosh Ghai for 
-                Diabetes, Hypertension, Headaches, Anemia, Kidney Disease, Thyroid and Liver Disease.
+                Patients frequently visit Dr. Santosh Ghai for Diabetes,
+                Hypertension, Headaches, Anemia, Kidney Disease, Thyroid and
+                Liver Disease.
               </p>
             </div>
           </div>
