@@ -11,8 +11,8 @@ const Faq = () => {
 
   return (
     <div>
-      <h1 className="lg:text-7xl font-semibold md:text-5xl sm:text-3xl text-2xl px-20 py-10">
-        Frequently <br /> asked questions
+      <h1 className="lg:text-6xl font-semibold md:text-5xl text-3xl lg:px-20 px-10 lg:py-10 py-5 text-[#07a496]">
+        Frequently <br className="lg:block hidden" /> asked questions
         <hr
           style={{
             height: "3px",

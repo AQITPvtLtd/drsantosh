@@ -19,12 +19,12 @@ const Facilities = () => {
           <div className="flex items-center justify-center">
             <div className="flex items-center justify-center gap-3 bg-white rounded-full py-3 px-6 shadow-md lg:w-3/12">
               <RiHeartAdd2Fill className="text-blue-400 text-3xl" />
-              <h1 className="text-blue-400 font-bold">Facilities We Have</h1>
+              <h1 className="text-[#07a496] font-bold">Facilities We Have</h1>
             </div>
           </div>
 
           {/* Subtitle */}
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 pt-2">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 pt-2 text-[#07a496]">
             What Facilities We <br /> Provide
           </h2>
         </div>
@@ -117,7 +117,7 @@ const Facilities = () => {
       <div className="flex justify-center py-5">
         <Link
           href="/services"
-          className="bg-[#04b67c] text-white p-3 rounded-md hover:bg-green-700 transition duration-300"
+          className="bg-[#07a496] p-3 text-white rounded-xl hover:font-semibold"
         >
           Know More
         </Link>

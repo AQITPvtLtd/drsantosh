@@ -8,6 +8,7 @@ import Moment from "react-moment";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
+  console.log(blogs);
   const [error, setError] = useState(null);
 
   useEffect(() => {
