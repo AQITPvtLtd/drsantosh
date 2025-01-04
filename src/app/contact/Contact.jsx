@@ -85,7 +85,7 @@ const Contact = () => {
         <div className="col-span-12 lg:col-start-2 lg:col-span-10 px-4 lg:px-0">
           <div className="map-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92268.49203752162!2d77.04189618800226!3d28.73951932841455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd209d53079b%3A0x4498aadd3d84e14f!2sDr%20Santosh%20Ghai%20%7C%20Best%20General%20Physician%20in%20Karol%20Bagh%20%7C%20General%20Physician%20in%20New%20Delhi!5e1!3m2!1sen!2sin!4v1726227931921!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.4864133007213!2d77.19323797550122!3d28.645150975657867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd209d53079b%3A0x4498aadd3d84e14f!2sDr%20Santosh%20Ghai%20%7C%20Best%20General%20Physician%20in%20Karol%20Bagh%20%7C%20General%20Physician%20in%20New%20Delhi!5e0!3m2!1sen!2sin!4v1735990213064!5m2!1sen!2sin"
               width="100%"
               height="450"
               style={{ border: 0 }}
