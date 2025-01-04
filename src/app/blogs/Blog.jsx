@@ -75,7 +75,7 @@ const Blog = () => {
                   href={`/blogs/${n.id}/${n.url}`}
                   className="flex mb-3 py-4"
                 >
-                  <div className="bg-[#07a496] p-3 text-white rounded-xl">
+                  <div className="bg-[#07a496] p-3 text-white rounded-xl hover:font-semibold">
                     Read More
                   </div>
                 </Link>
