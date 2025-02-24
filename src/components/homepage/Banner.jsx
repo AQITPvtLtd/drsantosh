@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-screen overflow-x-hidden bg-cover mt-24 lg:mt-32">
+    <div className="relative w-full h-screen overflow-x-hidden bg-cover mt-24 lg:mt-28">
       <div className="absolute inset-0">
         <Image
           src="/Banner/new.jpg"

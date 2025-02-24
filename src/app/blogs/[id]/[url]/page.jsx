@@ -1,6 +1,8 @@
 import React from "react";
 import DetailedBlog from "./DetailedBlog";
-
+export const metadata = {
+  title: "Dr. Santosh ghai : Blogs",
+};
 const Page = ({ params }) => {
   console.log(params);
   const { id, url } = params;

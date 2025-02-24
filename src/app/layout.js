@@ -3,6 +3,9 @@ import "./globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import Script from "next/script";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa6";
+import { IoLocationSharp } from "react-icons/io5";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -30,6 +33,28 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className={inter.className}>
+
+        {/* WhatsApp Button */}
+        <div className="fixed bottom-5 right-5 flex items-center bg-green-500 text-white p-2 rounded-full shadow-lg z-50 hover:bg-green-600 transition duration-300 ease-in-out">
+          <Link
+            href="https://wa.me/9999137803"
+            className="flex items-center font-semibold"
+            target="_blank"
+          >
+            <FaWhatsapp className="text-4xl" />
+          </Link>
+        </div>
+
+        {/* Location Button - Moved slightly up and left to prevent overlap */}
+        <div className="fixed bottom-20 right-5 flex items-center bg-blue-800 text-white p-2 rounded-full shadow-lg z-50 hover:bg-blue-900 transition duration-300 ease-in-out">
+          <Link
+            href="https://maps.app.goo.gl/RfsiVzi9dERohmkb8"
+            className="flex items-center font-semibold"
+            target="_blank"
+          >
+            <IoLocationSharp className="text-4xl shadow-inner" />
+          </Link>
+        </div>
         <Header />
         {children}
         <Footer />

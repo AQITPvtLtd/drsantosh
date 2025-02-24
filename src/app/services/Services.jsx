@@ -3,7 +3,7 @@ import Image from "next/image";
 import { service } from "@/data/service";
 const Services = () => {
   return (
-    <div className="mt-[150px]">
+    <div className="mt-[125px]">
       <div className="relative">
         <Image
           src="/Blog/serviceimg.png"
