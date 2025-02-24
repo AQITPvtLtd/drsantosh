@@ -4,16 +4,20 @@ import { NextResponse } from "next/server";
 import { v4 as uuidv4 } from "uuid";
 export async function POST(request) {
   try {
-    const { name, email, phone, message, subject } = await request.json();
+    const formData = await request.formData();
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const phone = formData.get("phone");
+    const location = formData.get("location");
+    const message = formData.get("message");
+    const MedicalReport = formData.get("MedicalReport");
+    // const { name, email, phone, message, subject } = await request.json();
     const unique_id = uuidv4();
-    {
-      console.log({ name, email, phone, message, subject });
-    }
-    // Use pool.query with async/await for promises
 
+    // Use pool.query with async/await for promises
     const [results] = await pool.query(
-      "INSERT INTO contact(id, name ,email ,phone , message ,subject) VALUES (?, ?, ?, ?, ?, ?)" ,
-      [unique_id, name, email, phone, message, subject]
+      "INSERT INTO contact(id,date ,name ,email ,phone ,location,message , medicalReport) VALUES (?,NOW() ,?, ?, ?, ?, ?, ?)",
+      [unique_id, name, email, phone, message, location, MedicalReport ? MedicalReport.name : ""]
     );
 
     // Send email using nodemailer
@@ -39,6 +43,10 @@ export async function POST(request) {
                 <p>${message}</p>
               </body>
              </html>`,
+      attachments: MedicalReport ? [{
+        filename: MedicalReport.name,
+        content: Buffer.from(await MedicalReport.arrayBuffer()),
+      }] : [],
     });
 
     // Send confirmation email to the user
