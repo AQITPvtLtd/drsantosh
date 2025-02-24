@@ -89,11 +89,19 @@ const Form = () => {
   };
   return (
     <div>
-      <form onSubmit={handleSubmit} className="gap-y-5">
-        <div className="py-3">
+      <h1 className="text-3xl font-bold text-[#07a496] text-center">
+        Submit Your Query
+      </h1>
+      <form onSubmit={handleSubmit} className="">
+        <div className="py-1">
+          <label
+            htmlFor="name"
+            className="block text-md font-medium mb-1 text-primary">
+            Full Name
+          </label>
           <input
             type="text"
-            placeholder="Your name"
+            placeholder="Enter Your Full name"
             className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
             name="name"
             value={formData.name}
@@ -102,10 +110,15 @@ const Form = () => {
           />
         </div>
 
-        <div className="pb-2">
+        <div className="pb-1">
+          <label
+            htmlFor="email"
+            className="block text-md font-medium mb-1 text-primary">
+            Email Address
+          </label>
           <input
             type="email"
-            placeholder="Your email address"
+            placeholder="Enter Your email address"
             className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
             name="email"
             value={formData.email}
@@ -114,10 +127,15 @@ const Form = () => {
           />
         </div>
 
-        <div className="pb-2">
+        <div className="pb-1">
+          <label
+            htmlFor="phone"
+            className="block text-md font-medium mb-1 text-primary">
+            Phone Number
+          </label>
           <input
             type="tel"
-            placeholder="Your Phone Number"
+            placeholder="Enter Your Phone Number"
             className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
             name="phone"
             value={formData.phone}
@@ -125,10 +143,16 @@ const Form = () => {
             required
           />
         </div>
-        <div className="pb-2">
+
+        <div className="pb-1">
+          <label
+            htmlFor="location"
+            className="block text-md font-medium mb-1 text-primary">
+            Location
+          </label>
           <input
             type="text"
-            placeholder="location"
+            placeholder="Enter Your Current Location"
             className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
             name="location"
             value={formData.location}
@@ -137,9 +161,14 @@ const Form = () => {
           />
         </div>
 
-        <div className="pb-2">
+        <div className="pb-1">
+          <label
+            htmlFor="message"
+            className="block text-md font-medium mb-1 text-primary">
+            Write Problem English / Hindi
+          </label>
           <textarea
-            placeholder="Write your message..."
+            placeholder="Describe Health Problem..."
             className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] h-32 w-full"
             name="message"
             value={formData.message}
@@ -151,7 +180,7 @@ const Form = () => {
         <div className="pb-2">
           <label
             htmlFor="MedicalReport"
-            className="block text-md font-medium mb-2 text-primary">
+            className="block text-md font-medium mb-1 text-primary">
             Upload Medical Report (Optional)
           </label>
           <input
@@ -159,7 +188,7 @@ const Form = () => {
             id="MedicalReport"
             name="MedicalReport"
             accept=".pdf, .doc, .docx, .xls, xlsx, .txt, .jpg, .png, .jpeg, .avif"
-            className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
+            className="border bg-white border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
             onChange={haldleFileChange}
           />
         </div>

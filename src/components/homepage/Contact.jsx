@@ -20,12 +20,7 @@ const Contact = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative justify-center py-12 px-4 lg:mt-14">
-        {/* Heading */}
-        <h1 className="text-3xl lg:text-5xl font-bold text-[#07a496] text-center">
-          Book Your Consultation
-        </h1>
-
+      <div className="relative justify-center pb-12 pt-6 px-4 lg:mt-14">
         <div className="lg:grid grid-cols-12">
           <div className="col-start-4 col-span-6">
             <Form />
