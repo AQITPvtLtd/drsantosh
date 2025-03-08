@@ -11,10 +11,10 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div>
-      <div className="text-white pt-16 dark:text-white">
+      <div>
         <div
           className="relative w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: "url(Footer/bgimg-min.png)" }}
+          style={{ backgroundImage: "url(footer/bgimg_min.png)" }}
         >
           <div className="container mx-auto px-6 lg:py-5 sm:py-12">
             {/* Top section */}
@@ -26,7 +26,7 @@ const Footer = () => {
                 height={200}
                 className=""
               />
-              <div className="flex gap-4 lg:mt-0 mt-10">
+              <div className="flex gap-4 lg:mt-0 mt-10 ">
                 <Link
                   href="https://www.instagram.com/drsantoshghai/"
                   target="__black"
@@ -58,10 +58,10 @@ const Footer = () => {
             <div className="lg:grid grid-cols-12">
               {/* Company Info */}
               <div className="col-start-2 col-span-3">
-                <h1 className="font-bold underline mb-4 text-2xl lg:text-3xl underline-offset-4">
+                <h1 className="font-bold underline mb-4 text-2xl lg:text-3xl underline-offset-4 text-white">
                   Company
                 </h1>
-                <ul className="space-y-2">
+                <ul className="space-y-2 text-white">
                   <li>
                     <Link href="/">Home</Link>
                   </li>
@@ -81,7 +81,7 @@ const Footer = () => {
               </div>
 
               {/* Services */}
-              <div className="col-span-3 mt-5 lg:mt-0">
+              <div className="col-span-3 mt-5 lg:mt-0 text-white">
                 <h1 className="font-bold underline mb-4 text-2xl lg:text-3xl underline-offset-4">
                   Services
                 </h1>
@@ -105,7 +105,7 @@ const Footer = () => {
               </div>
 
               {/* Contact Info */}
-              <div className="col-span-4 mt-5 lg:mt-0 lg:pb-0 pb-4">
+              <div className="col-span-4 mt-5 lg:mt-0 lg:pb-0 pb-4 text-white">
                 <h1 className="font-bold underline mb-4 text-2xl lg:text-3xl underline-offset-4">
                   Contact
                 </h1>
@@ -149,7 +149,7 @@ const Footer = () => {
           </div>
           <Link
             href="https://tekbooster.com/"
-            className="flex justify-center text-center font-semibold items-center p-2"
+            className="flex justify-center text-center font-semibold items-center p-2 text-white"
             target="__blank"
           >
             Design & Develope By Tek Booster (Digital Marketing Company)

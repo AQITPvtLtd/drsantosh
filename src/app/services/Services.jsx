@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { service } from "@/data/service";
 const Services = () => {
   return (
@@ -20,42 +21,12 @@ const Services = () => {
 
       <div className="p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
         {service.slice(0, 6).map((service) => (
-          <div
-            key={service.id}
-            className="flex flex-col sm:flex-row items-start border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:bg-gray-100 dark:border-white dark:bg-white"
-          >
-            {/* Left Side Image */}
-            <div className="relative w-full sm:w-1/3 h-48">
-              <Image
-                src={service.image}
-                alt={service.heading}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-              />
-            </div>
-
-            {/* Right Side Content */}
-            <div className="flex flex-col p-4 w-full sm:w-2/3">
-              {/* Heading */}
-              <h5 className="text-xl font-semibold dark:text-[#04b67c] mb-2 text-[#04b67c]">
-                {service.heading}
-              </h5>
-
-              {/* Content */}
-              <p className="text-gray-700">{service.content}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="lg:grid grid-cols-12 p-8">
-        <div className="col-start-4 col-span-5">
-          {service.slice(6, 7).map((service) => (
+          <Link href={`/services/${service.id}`}>
             <div
               key={service.id}
               className="flex flex-col sm:flex-row items-start border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:bg-gray-100 dark:border-white dark:bg-white"
             >
+
               {/* Left Side Image */}
               <div className="relative w-full sm:w-1/3 h-48">
                 <Image
@@ -75,9 +46,45 @@ const Services = () => {
                 </h5>
 
                 {/* Content */}
-                <p className="text-gray-700">{service.content}</p>
+                <p className="text-gray-700 line-clamp-3">{service.content}</p>
               </div>
+
             </div>
+          </Link>
+        ))}
+      </div>
+
+      <div className="lg:grid grid-cols-12 p-8">
+        <div className="col-start-4 col-span-5">
+          {service.slice(6, 7).map((service) => (
+            <Link href={`/services/${service.id}`}>
+              <div
+                key={service.id}
+                className="flex flex-col sm:flex-row items-start border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:bg-gray-100 dark:border-white dark:bg-white"
+              >
+                {/* Left Side Image */}
+                <div className="relative w-full sm:w-1/3 h-48">
+                  <Image
+                    src={service.image}
+                    alt={service.heading}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-lg"
+                  />
+                </div>
+
+                {/* Right Side Content */}
+                <div className="flex flex-col p-4 w-full sm:w-2/3">
+                  {/* Heading */}
+                  <h5 className="text-xl font-semibold dark:text-[#04b67c] mb-2 text-[#04b67c]">
+                    {service.heading}
+                  </h5>
+
+                  {/* Content */}
+                  <p className="text-gray-700">{service.content}</p>
+                </div>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

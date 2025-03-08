@@ -187,7 +187,7 @@ const Form = () => {
             type="file"
             id="MedicalReport"
             name="MedicalReport"
-            accept=".pdf, .doc, .docx, .xls, xlsx, .txt, .jpg, .png, .jpeg, .avif"
+            accept=".pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .png, .jpeg, .avif"
             className="border bg-white border-gray-300 p-3 rounded-md focus:outline-none focus:border-[#04b67c] w-full"
             onChange={haldleFileChange}
           />

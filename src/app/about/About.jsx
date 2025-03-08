@@ -39,7 +39,7 @@ const About = () => {
           </h1>
 
           <div className="space-y-7">
-            <p className="rounded-3xl shadow-2xl p-5">
+            <p className="rounded-3xl shadow-2xl p-5 mt-5">
               MBBS - Rajiv Gandhi University Of Health Sciences, Karnataka, 2006
             </p>
             <p className="rounded-3xl shadow-2xl p-5">

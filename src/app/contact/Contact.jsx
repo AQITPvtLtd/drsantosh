@@ -27,7 +27,7 @@ const Contact = () => {
         <div className="bg-white flex justify-center mt-[50px] px-4">
           <div className="w-full max-w-6xl flex flex-col md:flex-row gap-8 px-4 md:px-10">
             {/* Left Section: Address Details */}
-            <div className="flex flex-col space-y-6 w-full md:w-1/2">
+            <div className="flex flex-col space-y-6 w-full md:w-1/2 mt-14">
               <div className="flex items-start">
                 <div className="text-4xl">
                   <IoLocationSharp
