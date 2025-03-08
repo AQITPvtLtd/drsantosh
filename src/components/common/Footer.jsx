@@ -14,7 +14,7 @@ const Footer = () => {
       <div>
         <div
           className="relative w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: "url(footer/bgimg_min.png)" }}
+          style={{ backgroundImage: "url(bgimg_min.png)" }}
         >
           <div className="container mx-auto px-6 lg:py-5 sm:py-12">
             {/* Top section */}
