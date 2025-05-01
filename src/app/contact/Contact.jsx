@@ -37,10 +37,10 @@ const Contact = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Our Address</h3>
-                  <p className="text-gray-700">
+                  <Link href='https://maps.app.goo.gl/LUrkpem7GTbiG4de6' className="text-gray-700" target="__blank">
                     108 Pillar No. 107, 2-B, Pusa Rd, next to Karol Bagh, Block
                     18 A, Rajinder Place, Karol Bagh, New Delhi, Delhi, 110005
-                  </p>
+                  </Link>
                 </div>
               </div>
 

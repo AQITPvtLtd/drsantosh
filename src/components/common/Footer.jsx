@@ -113,15 +113,15 @@ const Footer = () => {
                   href="https://www.google.com/maps/dir//Dr+Santosh+Ghai+%7C+Best+General+Physician+in+Karol+Bagh+%7C+General+Physician+in+New+Delhi+108+Pillar+No.+107+2-B,+Pusa+Rd,+next+to+Karol+Bagh,+Block+18+A,+Rajinder+Place,+Karol+Bagh+New+Delhi,+Delhi,+110005/@28.645151,77.1958129,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390cfd209d53079b:0x4498aadd3d84e14f!2m2!1d77.1958129!2d28.645151?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D"
                   target="__blank"
                 >
-                  <div className="flex items-start gap-2 cursor-pointer">
-                    <div className="lg:text-2xl text-3xl">
-                      <FaLocationDot className="text-blue-700" />
-                    </div>
-                    <p>
+                  <div>
+                    <Link href='https://maps.app.goo.gl/LUrkpem7GTbiG4de6' className="flex items-start gap-2 cursor-pointer">
+                      <div className="lg:text-2xl text-3xl">
+                        <FaLocationDot className="text-blue-700" />
+                      </div>
                       108 Pillar No. 107, 2-B, Pusa Rd, next to Karol Bagh,
                       Block 18 A, Rajinder Place, Karol Bagh, New Delhi, Delhi,
                       110005
-                    </p>
+                    </Link>
                   </div>
                 </Link>
                 <Link href="tel:+919999137803" target="__blank">
