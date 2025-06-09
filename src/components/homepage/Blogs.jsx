@@ -7,7 +7,7 @@ import { getBlog } from "@/services/getBlog";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
-  console.log(blogs);
+  // console.log(blogs);
   const [error, setError] = useState(null);
 
   useEffect(() => {
