@@ -4,9 +4,9 @@ export const metadata = {
   title: "Dr. Santosh ghai : Blogs",
 };
 const Page = ({ params }) => {
-  console.log(params);
+  // console.log(params);
   const { id, url } = params;
-  console.log({ url, id });
+  // console.log({ url, id });
   return (
     <div>
       <DetailedBlog id={id} url={url} />
