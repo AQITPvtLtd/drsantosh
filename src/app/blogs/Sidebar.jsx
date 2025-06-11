@@ -24,10 +24,10 @@ const Sidebar = () => {
 
   return (
     <div>
-      <div className="sm:px-6 lg:px-8 border-2 rounded-2xl h-screen">
-        <ul className="h-screen">
+      <div className="sm:px-6 lg:px-2 border-2 rounded-2xl h-fit">
+        <ul className="h-fit">
           <div className="">
-            <p className="text-[#07a496] font-semibold text-xl py-2 ">
+            <p className="text-[#07a496] font-semibold text-lg">
               More Blogs
             </p>
           </div>
@@ -40,10 +40,10 @@ const Sidebar = () => {
                   className="flex hover:translate-x-2 transition duration-300 ease-in-out"
                 >
                   <div className="flex gap-1 hover:text-[#07a496]">
-                    <div className="text-xl">
+                    <div className="text-base">
                       <AiOutlineDoubleRight className="mt-1" />
                     </div>
-                    <h2 className="text-lg font-medium">{n.short_name}</h2>
+                    <h2 className="text-base font-medium">{n.short_name}</h2>
                   </div>
                 </Link>
               </div>
