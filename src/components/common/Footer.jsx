@@ -149,7 +149,7 @@ const Footer = () => {
             className="flex justify-center text-center font-semibold items-center p-2 text-white"
             target="__blank"
           >
-            Design & Develope By Tek Booster (Digital Marketing Company)
+            Design & Developed By Tek Booster (Digital Marketing Company)
           </Link>
         </div>
       </div>
