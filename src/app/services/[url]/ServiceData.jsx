@@ -44,7 +44,7 @@ const ServiceData = ({ url }) => {
 
                             <div>
                                 {/* Causes List */}
-                                <h2 className="text-2xl font-semibold text-gray-900 mb-2">Causes of Diabetes</h2>
+                                <h2 className="text-2xl font-semibold text-gray-900 mb-2">Causes of {obj.heading} </h2>
                                 <ul className="list-disc list-outside text-gray-700">
                                     {obj.causes.map((cause, index) => (
                                         <li key={index} className="mb-2">{cause}</li>
@@ -54,7 +54,7 @@ const ServiceData = ({ url }) => {
 
                             <div>
                                 {/* Prevention List */}
-                                <h2 className="text-2xl font-semibold text-gray-900 mb-2">Prevention of Diabetes</h2>
+                                <h2 className="text-2xl font-semibold text-gray-900 mb-2">Prevention of {obj.heading}</h2>
                                 <ul className="list-disc list-outside text-gray-700">
                                     {obj.prevention.map((step, index) => (
                                         <li key={index} className="mb-2">{step}</li>
