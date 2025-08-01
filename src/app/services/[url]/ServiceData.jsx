@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { service } from "@/data/service";
 
-const ServiceData = ({ id }) => {
-    const obj = service.find((item) => item.id == id);
+const ServiceData = ({ url }) => {
+    const obj = service.find((item) => item.url == url);
 
     if (!obj) {
         return <div>Service data not found.</div>;

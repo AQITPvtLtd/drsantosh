@@ -46,7 +46,7 @@ const Blog = () => {
       {error ? (
         <p className="text-red-500 text-center mt-6">{error}</p>
       ) : (
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 sm:px-6">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:px-6 py-8">
           {blogs.map((n) => (
             <li
               key={n.url}
@@ -55,7 +55,7 @@ const Blog = () => {
               <Image
                 src={`/Blog/${n.image}`}
                 alt={n.heading}
-                className="w-full h-64 object-cover"
+                className="w-full h-56 object-cover"
                 height={100}
                 width={1000}
               />
@@ -72,7 +72,7 @@ const Blog = () => {
                   dangerouslySetInnerHTML={{ __html: n.description }}
                 ></p>
                 <Link
-                  href={`/blogs/${n.id}/${n.url}`}
+                  href={`/blogs/${n.url}`}
                   className="flex mb-3 py-4"
                 >
                   <div className="bg-[#07a496] p-3 text-white rounded-xl hover:font-semibold">

@@ -21,7 +21,7 @@ const Services = () => {
 
       <div className="p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
         {service.slice(0, 6).map((service) => (
-          <Link href={`/services/${service.id}`}>
+          <Link href={`/services/${service.url}`}>
             <div
               key={service.id}
               className="flex flex-col sm:flex-row items-start border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:bg-gray-100 dark:border-white dark:bg-white"
@@ -57,7 +57,7 @@ const Services = () => {
       <div className="lg:grid grid-cols-12 p-8">
         <div className="col-start-4 col-span-5">
           {service.slice(6, 7).map((service) => (
-            <Link href={`/services/${service.id}`}>
+            <Link href={`/services/${service.url}`}>
               <div
                 key={service.id}
                 className="flex flex-col sm:flex-row items-start border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:bg-gray-100 dark:border-white dark:bg-white"

@@ -24,10 +24,10 @@ const Sidebar = () => {
 
   return (
     <div>
-      <div className="sm:px-6 lg:px-2 border-2 rounded-2xl h-fit">
+      <div className="sm:px-6 lg:px-2 border-2 rounded-2xl h-fit pb-2">
         <ul className="h-fit">
-          <div className="">
-            <p className="text-[#07a496] font-semibold text-lg">
+          <div className="px-3 py-3">
+            <p className="text-[#07a496] font-semibold text-2xl">
               More Blogs
             </p>
           </div>
@@ -36,7 +36,7 @@ const Sidebar = () => {
             <li key={n.url}>
               <div>
                 <Link
-                  href={`/blogs/${n.id}/${n.url}`}
+                  href={`/blogs/${n.url}`}
                   className="flex hover:translate-x-2 transition duration-300 ease-in-out"
                 >
                   <div className="flex gap-1 hover:text-[#07a496]">

@@ -17,7 +17,28 @@ export const service = [
       "Drink More Water – Helps regulate blood sugar naturally.",
       "Avoid Smoking & Alcohol – These can increase risk factors.",
       "Regular Checkups – Helps detect early signs of diabetes."
-    ]
+    ],
+    url: "diabetes",
+    meta_title: "Diabetes Specialist in Delhi – Dr. Santosh Ghai | Internal Medicine Expert",
+    meta_desc:
+      "Struggling with diabetes? Consult Dr. Santosh Ghai, a trusted Internal Medicine expert in Delhi with 11+ years of experience in diagnosing and managing diabetes. Get personalized care and lifestyle guidance today.",
+    keyword: [
+      "Diabetes specialist in Delhi",
+      "best diabetes doctor in Delhi",
+      "internal medicine expert for diabetes",
+      "Dr. Santosh Ghai diabetes treatment",
+      "diabetes management in Delhi",
+      "type 2 diabetes treatment Delhi",
+      "blood sugar control doctor Delhi",
+      "diabetes care clinic Delhi",
+      "top internal medicine doctor in Delhi",
+      "personalized diabetes care",
+      "diabetes lifestyle guidance",
+      "diabetes diagnosis in Delhi",
+      "trusted diabetes physician Delhi",
+      "experienced diabetes doctor Delhi",
+      "best doctor for sugar problem in Delhi",
+    ],
   },
   {
     id: 2,
@@ -37,7 +58,29 @@ export const service = [
       "Manage Stress – Practice relaxation techniques.",
       "Quit Smoking – Reduces risks of high BP.",
       "Monitor BP Levels – Early detection is key."
-    ]
+    ],
+    url: "hypertension",
+    meta_title: "Hypertension Specialist in Delhi – Dr. Santosh Ghai | High BP Management",
+    meta_desc:
+      "Control high blood pressure with expert care from Dr. Santosh Ghai, Internal Medicine Specialist in Delhi. Get personalized treatment, lifestyle guidance, and early diagnosis for a healthier heart.",
+    keyword: [
+      "control high blood pressure in delhi",
+      "best doctor for hypertension in delhi",
+      "internal medicine specialist for bp",
+      "dr santosh ghai blood pressure treatment",
+      "high bp management delhi",
+      "personalized hypertension care",
+      "lifestyle tips for high bp",
+      "early diagnosis of hypertension",
+      "heart health expert delhi",
+      "best physician for bp control",
+      "hypertension treatment near me",
+      "top internal medicine doctor delhi",
+      "blood pressure check up specialist",
+      "bp monitoring clinic in delhi",
+      "expert care for high blood pressure",
+    ],
+
   },
   {
     id: 3,
@@ -57,7 +100,28 @@ export const service = [
       "Sleep Well – Ensure 7-8 hours of rest.",
       "Eat on Time – Avoid long gaps between meals.",
       "Manage Stress – Meditation and relaxation help."
-    ]
+    ],
+    url: "headaches",
+    meta_title: "Headache Treatment in Delhi – Dr. Santosh Ghai | General Physician",
+    meta_desc:
+      "Suffering from frequent headaches? Consult Dr. Santosh Ghai, an experienced general physician in Delhi. Get expert diagnosis and holistic treatment for stress, migraine, and tension-related headaches.",
+    keyword: [
+      "frequent headaches treatment",
+      "headache doctor in delhi",
+      "migraine specialist in delhi",
+      "stress headache treatment",
+      "tension headache doctor",
+      "best general physician in delhi",
+      "dr santosh ghai delhi",
+      "headache relief consultation",
+      "chronic headache treatment",
+      "migraine relief expert",
+      "holistic headache care delhi",
+      "stress induced headache cure",
+      "top headache physician delhi",
+      "headache and stress doctor",
+      "migraine and tension relief delhi",
+    ],
   },
   {
     id: 4,
@@ -77,7 +141,28 @@ export const service = [
       "Stay Hydrated – Helps blood circulation.",
       "Regular Blood Tests – Detects anemia early.",
       "Avoid Excess Tea/Coffee – Reduces iron absorption."
-    ]
+    ],
+    url: "anemia",
+    meta_title: "Anemia Treatment in Delhi – Dr. Santosh Ghai | Internal Medicine Expert",
+    meta_desc:
+      "Feeling weak or constantly tired? You may have anemia. Consult Dr. Santosh Ghai, a trusted internal medicine doctor in Delhi, for expert diagnosis and treatment of iron and vitamin deficiency-related anemia.",
+    keyword: [
+      "anemia treatment in delhi",
+      "iron deficiency doctor in delhi",
+      "best doctor for fatigue in delhi",
+      "vitamin deficiency treatment delhi",
+      "internal medicine doctor delhi",
+      "weakness and tiredness treatment",
+      "low hemoglobin doctor delhi",
+      "anemia specialist in delhi",
+      "iron supplements consultation delhi",
+      "fatigue and dizziness treatment",
+      "best anemia doctor delhi",
+      "internal medicine expert delhi",
+      "tiredness causes and treatment",
+      "anemia care near me",
+      "low energy levels doctor delhi",
+    ],
   },
   {
     id: 5,
@@ -97,7 +182,29 @@ export const service = [
       "Eat a Healthy Diet – Avoid excess salt and sugar.",
       "Limit Alcohol & Caffeine – Reduces kidney load.",
       "Regular Health Checkups – Prevents long-term damage."
-    ]
+    ],
+    url: "kidneydisease",
+    meta_title: "Kidney Disease Specialist in Delhi – Dr. Santosh Ghai | Internal Medicine",
+    meta_desc:
+      "Concerned about kidney health? Dr. Santosh Ghai, an experienced internal medicine specialist in Delhi, offers expert diagnosis and management of kidney disease, diabetes-related nephropathy, and hypertension.",
+    keyword: [
+      "kidney disease treatment in delhi",
+      "diabetes related kidney issues",
+      "nephropathy specialist in delhi",
+      "hypertension kidney care",
+      "internal medicine doctor delhi",
+      "kidney health expert delhi",
+      "best doctor for kidney disease",
+      "kidney care for diabetics",
+      "high blood pressure kidney specialist",
+      "delhi kidney specialist doctor",
+      "kidney disease management delhi",
+      "diabetic nephropathy treatment",
+      "kidney checkup in delhi",
+      "expert kidney doctor delhi",
+      "kidney problem solution delhi",
+    ],
+
   },
   {
     id: 6,
@@ -117,7 +224,29 @@ export const service = [
       "Regular Thyroid Tests – Early detection helps treatment.",
       "Maintain a Balanced Diet – Supports thyroid function.",
       "Exercise Regularly – Helps regulate hormones."
-    ]
+    ],
+    url: "thyroid",
+    meta_title: "Thyroid Specialist in Delhi – Dr. Santosh Ghai | Hormonal Disorder Care",
+    meta_desc:
+      "Manage thyroid disorders with expert care from Dr. Santosh Ghai, an Internal Medicine specialist in Delhi. Get personalized treatment for hyperthyroidism, hypothyroidism, and hormonal imbalance.",
+    keyword: [
+      "thyroid specialist in delhi",
+      "dr. santosh ghai",
+      "hormonal disorder care",
+      "best thyroid doctor delhi",
+      "thyroid treatment delhi",
+      "endocrine specialist delhi",
+      "hormonal imbalance doctor",
+      "thyroid disorder expert",
+      "delhi thyroid clinic",
+      "top endocrinologist delhi",
+      "thyroid gland issues",
+      "thyroid consultation delhi",
+      "hypothyroidism treatment delhi",
+      "hyperthyroidism specialist delhi",
+      "thyroid health expert",
+    ],
+
   },
   {
     id: 7,
@@ -137,6 +266,27 @@ export const service = [
       "Eat a Healthy Diet – Avoid excess fats and sugars.",
       "Stay Active – Helps prevent fatty liver disease.",
       "Regular Liver Tests – Detects problems early."
-    ]
+    ],
+    url: "liverdisease",
+    meta_title: "Liver Disease Specialist in Delhi – Dr. Santosh Ghai | Internal Medicine",
+    meta_desc:
+      "Facing liver issues? Dr. Santosh Ghai, an experienced internal medicine doctor in Delhi, offers expert care for fatty liver, hepatitis, and liver dysfunction. Get accurate diagnosis and safe, effective treatment.",
+    keyword: [
+      "liver disease specialist in delhi",
+      "dr. santosh ghai",
+      "internal medicine",
+      "best liver doctor delhi",
+      "liver treatment delhi",
+      "hepatologist in delhi",
+      "liver care expert",
+      "liver disorder specialist",
+      "fatty liver treatment delhi",
+      "liver cirrhosis doctor delhi",
+      "liver health clinic",
+      "top liver specialist delhi",
+      "liver transplant consultation",
+      "liver infection treatment delhi",
+      "liver disease diagnosis delhi",
+    ],
   }
 ];
