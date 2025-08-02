@@ -81,7 +81,7 @@ const DetailedBlog = ({ url }) => {
                     {obj?.name}
                   </h2>
                   <p
-                    className="text-gray-700 text-sm leading-relaxed"
+                    className="text-gray-700 text-sm leading-relaxed lg:text-justify"
                     dangerouslySetInnerHTML={{ __html: obj?.description }}
                   ></p>
                 </div>
